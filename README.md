@@ -1,8 +1,14 @@
 # MFDS-DETR
 
-## Installation
+The overall architecture of MFDS-DETR comprises four parts: Backbone, High-level Screening-feature Pyramid Networks, Encoder and Decoder.
+![image](img/OverallFramework.png)
 
-### Requirements
+Prediction results of MFDS-DETR on the WBCDD dataset (black boxes indicate Ground Truth and different colored boxes indicate its prediction boxes).
+![Comparison](img/VisualizationAnalysis.png)
+
+## 1. Installation
+
+### (1) Requirements
 
 * Linux, CUDA>=9.2, GCC>=5.4
   
@@ -29,7 +35,7 @@
     pip install -r requirements.txt
     ```
 
-### Compiling CUDA operators
+### (2) Compiling CUDA operators
 ```bash
 cd ./models/ops
 sh ./make.sh
@@ -37,11 +43,11 @@ sh ./make.sh
 python test.py
 ```
 
-## Usage
+## 2. Usage
 
-### Dataset preparation
+### (1) Dataset preparation
 
-Please download [COCO 2017 dataset](https://cocodataset.org/) and organize them as following:
+For convenience we referenced the code of [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR), so please rename the dataset you are using as following:
 
 ```
 code_root/
@@ -54,7 +60,7 @@ code_root/
         	└── instances_val2017.json
 ```
 
-### Training
+### (2) Training
 
 #### Training on single node
 
@@ -97,9 +103,9 @@ GPUS_PER_NODE=8 ./tools/run_dist_slurm.sh <partition> deformable_detr 16 configs
 * If your file system is slow to read images, you may consider enabling '--cache_mode' option to load whole dataset into memory at the beginning of training.
 * You may increase the batch size to maximize the GPU utilization, according to GPU memory of yours, e.g., set '--batch_size 3' or '--batch_size 4'.
 
-### Evaluation
+### (3) Evaluation
 
-You can get the config file and pretrained model of Deformable DETR (the link is in "Main Results" session), then run following command to evaluate it on COCO 2017 validation set:
+You can get the config file and run following command to evaluate it on your dataset:
 
 ```bash
 <path to config file> --resume <path to pre-trained model> --eval
@@ -107,7 +113,23 @@ You can get the config file and pretrained model of Deformable DETR (the link is
 
 You can also run distributed evaluation by using ```./tools/run_dist_launch.sh``` or ```./tools/run_dist_slurm.sh```.
 
-## Citation
+
+## 3. Convenience for windows
+
+For the convenience of windows users, we provide two files, ```mine.py``` and ```predict.py```, you can run these two files for training and prediction.
+
+## 4. WBCCD dataset and LISC dataset
+Under the guidance of our team's associated medical practitioners, we labeled the existing publicly available leukocyte classification dataset, LISC, with target frames. 
+We also collaborated with our partner hospitals to develop our own leukocyte detection dataset, WBCCD.
+
+If you want to use our relabelled dataset, please cite our article.
+
+Donwload link of labeled WBCCD dataset is available at [https://drive.google.com/file/d/11eBT-JXXjkhEshuQ5WxtSwKY6soIsJra/view?usp=drive_link](https://drive.google.com/file/d/11eBT-JXXjkhEshuQ5WxtSwKY6soIsJra/view?usp=drive_link).
+
+Donwload link of labeled LISC dataset is available at [https://drive.google.com/file/d/1GNvPqiIs1MpCU_LK14gWo5FqyaCceKzj/view?usp=drive_link](https://drive.google.com/file/d/1GNvPqiIs1MpCU_LK14gWo5FqyaCceKzj/view?usp=drive_link).
+
+
+## 5. Citation
 ```
 @article{CHEN2024107917,
 title = {Accurate leukocyte detection based on deformable-DETR and multi-level feature fusion for aiding diagnosis of blood diseases},
