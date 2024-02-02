@@ -4,7 +4,7 @@ The overall architecture of MFDS-DETR comprises four parts: Backbone, High-level
 ![image](img/OverallFramework.png)
 
 Prediction results of MFDS-DETR on the WBCDD dataset (black boxes indicate Ground Truth and different colored boxes indicate its prediction boxes).
-![Comparison](img/VisualizationAnalysis.png)
+![image](img/VisualizationAnalysis.png)
 
 ## 1. Installation
 
