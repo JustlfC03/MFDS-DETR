@@ -1,10 +1,10 @@
 # MFDS-DETR
 
 The overall architecture of MFDS-DETR comprises four parts: Backbone, High-level Screening-feature Pyramid Networks, Encoder and Decoder.
-![image](img/OverallFramework.png)
+![OverallFramework](img/OverallFramework.png)
 
 Prediction results of MFDS-DETR on the WBCDD dataset (black boxes indicate Ground Truth and different colored boxes indicate its prediction boxes).
-![image](img/VisualizationAnalysis.png)
+![VisualizationAnalysis](img/VisualizationAnalysis.png)
 
 ## 1. Installation
 
@@ -122,7 +122,7 @@ For the convenience of windows users, we provide two files, ```mine.py``` and ``
 Under the guidance of our team's associated medical practitioners, we labeled the existing publicly available leukocyte classification dataset, LISC, with target frames. 
 We also collaborated with our partner hospitals to develop our own leukocyte detection dataset, WBCCD.
 
-If you want to use our relabelled dataset, please cite our article.
+If you want to use our private and relabelled datasets, please cite our article.
 
 Donwload link of labeled WBCCD dataset is available at [https://drive.google.com/file/d/11eBT-JXXjkhEshuQ5WxtSwKY6soIsJra/view?usp=drive_link](https://drive.google.com/file/d/11eBT-JXXjkhEshuQ5WxtSwKY6soIsJra/view?usp=drive_link).
 
