@@ -124,9 +124,9 @@ We also collaborated with our partner hospitals to develop our own leukocyte det
 
 If you want to use our private and relabelled datasets, please cite our article.
 
-Donwload link of labeled WBCCD dataset is available at [https://drive.google.com/file/d/11eBT-JXXjkhEshuQ5WxtSwKY6soIsJra/view?usp=drive_link](https://drive.google.com/file/d/11eBT-JXXjkhEshuQ5WxtSwKY6soIsJra/view?usp=drive_link).
+Download link of labeled WBCCD dataset is available at [https://drive.google.com/file/d/11eBT-JXXjkhEshuQ5WxtSwKY6soIsJra/view?usp=drive_link](https://drive.google.com/file/d/11eBT-JXXjkhEshuQ5WxtSwKY6soIsJra/view?usp=drive_link).
 
-Donwload link of labeled LISC dataset is available at [https://drive.google.com/file/d/1GNvPqiIs1MpCU_LK14gWo5FqyaCceKzj/view?usp=drive_link](https://drive.google.com/file/d/1GNvPqiIs1MpCU_LK14gWo5FqyaCceKzj/view?usp=drive_link).
+Download link of labeled LISC dataset is available at [https://drive.google.com/file/d/1GNvPqiIs1MpCU_LK14gWo5FqyaCceKzj/view?usp=drive_link](https://drive.google.com/file/d/1GNvPqiIs1MpCU_LK14gWo5FqyaCceKzj/view?usp=drive_link).
 
 
 ## 5. Citation
